@@ -1,6 +1,7 @@
 <?php
 
 
+
 ?>
 
 <!doctype html>
@@ -44,7 +45,7 @@
 
             <h1>STRONG PASSWORD GENERATOR</h1>
 
-            <form class="d-flex align-items-end " action="passwordGenerator.php" method="GET">
+            <form class="d-flex align-items-end" method="POST">
               
             <div class="form-group">
                 <label for="numero">Password length:</label>
@@ -54,6 +55,17 @@
                 <button type="submit" class="btn btn-primary ms-4">Generate</button>
 
             </form>
+
+            <div class="mt-4 col-3">
+                <label for="password">Password generated:</label>
+                <p id="password"  class="form-control">
+                    <?php
+                    include_once 'functions.php';
+                    echo CasualString($passLenght, $caratteri );
+                    ?>
+                </p>
+
+            </div>
 
 
         </main>
