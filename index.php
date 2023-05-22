@@ -44,6 +44,17 @@
 
             <h1>STRONG PASSWORD GENERATOR</h1>
 
+            <form class="d-flex align-items-end " action="passwordGenerator.php" method="GET">
+              
+            <div class="form-group">
+                <label for="numero">Password length:</label>
+                <input type="number" class="form-control" id="numero" placeholder="Inserisci un numero" name="LenghtPass">
+            </div>
+
+                <button type="submit" class="btn btn-primary ms-4">Generate</button>
+
+            </form>
+
 
         </main>
 
