@@ -45,17 +45,21 @@
 
             <h1>STRONG PASSWORD GENERATOR</h1>
 
-            <form class="d-flex align-items-end" method="POST" action="functions.php">
-              
-            <div class="form-group">
-                <label for="numero">Password length:</label>
-                <input type="number" class="form-control" id="numero" placeholder="Inserisci un numero" name="LenghtPass">
+
+            <div class="mt-4 col-3">
+                <label for="password">Password generated:</label>
+                <p id="password"  class="form-control">
+                    <?php
+                        session_start();
+
+                        //Recupero la variabile di sessione
+                        $generatedpassword = $_SESSION['passwordgenerated'];
+
+                        echo $generatedpassword;
+                    ?>
+                </p>
+
             </div>
-
-                <button type="submit" class="btn btn-primary ms-4">Generate</button>
-
-            </form>
-
 
 
         </main>

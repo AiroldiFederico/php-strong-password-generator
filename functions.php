@@ -25,6 +25,15 @@
 
 
 
+    //Creazione variabile di sessione
+    session_start();
+    $_SESSION['passwordgenerated'] = CasualString($passLenght, $caratteri );
+
+
+    // Ridireziona l'utente a password.php
+    header('Location: password.php');
+    exit();
+
 ?>
 
 
