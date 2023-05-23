@@ -41,14 +41,14 @@
 
     <body>
 
-        <main class="col-8 m-auto p-4">
+        <main class="col-8 m-auto p-4 d-flex flex-column justify-content-center h-100">
 
             <h1>STRONG PASSWORD GENERATOR</h1>
 
 
-            <div class="mt-4 col-3">
+            <div class="mt-4 col-12 d-flex align-items-start gap-3">
                 <label for="password">Password generated:</label>
-                <p id="password"  class="form-control">
+                <p id="password"  class="form-control w-50">
                     <?php
                         session_start();
 

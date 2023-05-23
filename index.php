@@ -41,18 +41,48 @@
 
     <body>
 
-        <main class="col-8 m-auto p-4">
+        <main class="col-8 m-auto p-4 d-flex flex-column justify-content-center h-100">
 
             <h1>STRONG PASSWORD GENERATOR</h1>
 
-            <form class="d-flex align-items-end" method="POST" action="functions.php">
+            <form class="d-flex flex-column gap-3 align-items-start position-relative p-4 rounded bg-info bg-opacity-10 border border-info" method="POST" action="functions.php">
               
-            <div class="form-group">
-                <label for="numero">Password length:</label>
-                <input type="number" class="form-control" id="numero" placeholder="Inserisci un numero" name="LenghtPass">
-            </div>
+                <!-- Definisci lunghezza -->
+                <div class="form-group d-flex align-items-center col-10">
+                    <label for="numero" class="col-4">Password length:</label>
+                    <input type="number" class="form-control w-50" id="numero" placeholder="Inserisci un numero" name="LenghtPass">
+                </div>
 
-                <button type="submit" class="btn btn-primary ms-4">Generate</button>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox1" name="lettere">
+                        <label class="form-check-label" for="checkbox1">Lettere</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox2" name="numeri">
+                        <label class="form-check-label" for="checkbox2">Numeri</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkbox3" name="simboli">
+                        <label class="form-check-label" for="checkbox3">Simboli</label>
+                    </div>
+                </div>
+
+                <div class="form-group d-flex gap-3">
+                    <label class="form-check-label" for="radio">Escludere ripetizione caratteri?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioOption" id="radio1" value="option1">
+                        <label class="form-check-label" for="radio1">Sì</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioOption" id="radio2" value="option2">
+                        <label class="form-check-label" for="radio2">No</label>
+                    </div>
+                </div>
+
+
+                <!-- submit -->
+                <button type="submit" class="btn btn-primary ms-4 position-absolute bottom-0 end-0 mb-4 me-4">Generate</button>
 
             </form>
 
