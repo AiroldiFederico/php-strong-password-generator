@@ -48,7 +48,7 @@
 
             <div class="mt-4 col-12 d-flex align-items-start gap-3">
                 <label for="password">Password generated:</label>
-                <p id="password"  class="form-control w-50">
+                <p id="password"  class="form-control w-50 overflow-auto">
                     <?php
                         session_start();
 

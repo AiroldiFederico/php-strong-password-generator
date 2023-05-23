@@ -71,11 +71,11 @@
                 <div class="form-group d-flex gap-3">
                     <label class="form-check-label" for="radio">Escludere ripetizione caratteri?</label>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioOption" id="radio1" value="option1">
+                        <input class="form-check-input" type="radio" name="radiorepeat" id="radio1" value="option1">
                         <label class="form-check-label" for="radio1">Sì</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioOption" id="radio2" value="option2">
+                        <input class="form-check-input" type="radio" name="radiorepeat" id="radio2" value="option2">
                         <label class="form-check-label" for="radio2">No</label>
                     </div>
                 </div>
